@@ -1,0 +1,914 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Top Bar Styles */
+.top-bar {
+  padding: 10px 20px; /* Add padding inside the top bar */
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Vertically center items */
+  border-bottom: 1px solid #aeadad;
+  padding-top: 15px;
+}
+
+.top-bar span {
+  color: #80858c;
+}
+/* Left Section: Dropdowns and Search Icon */
+.top-bar .left-section {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 20px; /* Space between dropdowns and search icon */
+}
+
+/* Dropdown Styles */
+.top-bar .dropdown {
+  position: relative;
+  border-right: 1px solid #b5b4b4; /* Gray border on the left */
+  padding-right: 10px; /* Add space between border and dropdown */
+}
+
+.top-bar .dropdown select {
+  background: transparent; /* Transparent background */
+  border: none; /* Remove default border */
+  color: #878787; /* White text color */
+  font-weight: bold; /* Make text bold */
+  appearance: none; /* Remove default dropdown arrow */
+  padding-right: 20px; /* Add space for custom arrow */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.top-bar .dropdown::after {
+  content: "\25BC"; /* Unicode for down arrow */
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #807f7f; /* White arrow color */
+  pointer-events: none; /* Prevent clicking on the arrow */
+}
+
+/* Search Icon Styles */
+.top-bar .search-icon {
+  border-right: 1px solid #9f9e9e; /* Gray border on the left */
+  padding-right: 10px; /* Add space between border and icon */
+}
+
+.top-bar .search-icon i {
+  color: #888787; /* White icon color */
+  font-size: 1.2em; /* Increase icon size */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+
+/* Right Section: Phone Number, Sign In, Register */
+.top-bar .right-section {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 20px; /* Space between items */
+}
+
+.top-bar .right-section span {
+  margin-right: auto; /* Push the phone number to the left */
+}
+
+.top-bar .right-section a {
+  color: #969595; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+  border-left: 1px solid #b2b2b2;
+  padding-left: 10px;
+}
+
+header {
+  padding: 10px 20px; /* Add padding inside the header */
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Vertically center items */
+  position: relative;
+  z-index: 3; /* Ensure header is above other content */
+}
+
+.logo {
+  font-size: 1.5em; /* Increase logo size */
+  font-weight: bold; /* Make logo bold */
+  color: #80858c; /* Logo color (blue) */
+  margin-left: 100px;
+  margin-top: 20px; 
+  margin-bottom: 15px;
+}
+.logo{
+  cursor: pointer;
+}
+
+.logo .list {
+  color: #000; /* Black color for "List" */
+}
+
+.logo .race {
+  color: #FF0000; /* Red color for "Race" */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-right: 170px;
+  margin-top: 20px; 
+  display: flex;
+  justify-content: 0px;
+  margin-bottom: 15px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #7a7a7a;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('./stephan-cassara-ZKjXG4510ng-unsplash.jpg') no-repeat center center/cover;
+  height: 700px; /* Adjust height as needed */
+  display: flex;
+  margin: 0 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Ensure text is white for contrast */
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  z-index: -1; /* Place the overlay behind the content */
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+/* Search Container Styles */
+.search-container {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Space between inputs and button */
+  width: 400px;
+  margin-left: -600px;
+}
+
+.search-input {
+  display: flex;
+  align-items: center; /* Vertically center label and input */
+  gap: 5px; /* Space between label and input */
+  margin-left: -9.9px;
+}
+
+.search-input label {
+  font-size: 1em; /* Normal font size for labels */
+  color: #363535; /* Dark text color */
+  font-weight: bold; /* Make labels bold */
+  background-color: #fff;
+  padding: 19px;
+  margin-right: -10px;
+
+}
+
+.search-input input {
+  padding: 8px; /* Add padding to inputs */
+  border: 1px solid #ffffff; /* Light gray border */
+  font-size: 1em; /* Normal font size */
+  width: 329px; /* Set a fixed width for inputs */
+  padding: 18px;
+}
+
+.search-container button {
+  padding: 20px 34px; /* Add padding to button */
+  background: #ae1a1a; /* Blue background */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 1em; /* Normal font size */
+}
+
+.search-input i {
+  color: #363535; /* Gray icon color */
+  font-size: 1.2em; /* Increase icon size */
+  cursor: pointer; /* Change cursor to pointer */
+  background-color: #fff;
+  padding : 18.65px;
+  margin-left: -11px;
+}
+
+.search-input:first-of-type i{
+  border-left: 1px solid #a6a5a5;
+} 
+
+.categories {
+  display:flex;
+  padding: 20px 200px; /* Add padding inside the categories */
+  margin-top: -100px; /* Pull the categories up by 100px */
+  position: relative;
+  justify-content: space-between;
+  z-index: 2; /* Ensure categories are above the hero */
+  gap: 2px; /* Space between categories */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.category {
+  text-align: center;
+  padding: 22px 17px; /* Reduce padding inside each category */
+  background-color: #ffffff;
+  margin: 0 8px; /* Remove margin */
+  /* border: 2px solid #000; */
+  flex: 1; /* Allow categories to grow equally */
+  box-sizing: border-box;
+  width: 20%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.category i {
+  font-size: 2em; /* Increase icon size */
+  color: #33383d; /* Set icon color (blue) */
+  margin-bottom: 10px; /* Add space below the icon */
+}
+
+.category h4 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  margin-top: 5px; /* Reduce space below the heading */
+}
+
+.category p {
+  font-size: 1.2em;
+  color: #777;
+  margin: 0; /* Remove margin below the paragraph */
+}
+
+.how-it-works {
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.how-it-works h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+
+}
+
+.how-it-works p {
+  font-size: 1.2em;
+  margin-bottom: 60px;
+  color: #5a5959;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.step {
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding : 30px;
+}
+
+.step i{
+  font-size: 40px;
+  margin : 20px 5px;
+  border-radius: 50%;
+  background-color: #d3d1d1;
+  padding : 11px 16px;
+}
+
+.step h3 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  margin-top: 7px;
+}
+
+.step p {
+  font-size: 1em;
+  color: #777;
+  margin-bottom: 10px;
+}
+.step p:last-of-type{
+  margin-bottom: 40px;
+}
+
+.step a {
+  color: #9d9d9e;
+  text-decoration: none;
+  border: 1px solid rgb(182, 181, 181);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.explore {
+  padding: 20px;
+  text-align: center;
+  background: #dedddd;
+  margin : 90px 40px;
+  padding : 60px 80px;
+}
+
+.explore h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.explore p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+
+/* Cards Section Styles */
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, 1fr)); /* Responsive grid layout */
+  gap: 28px; /* Space between cards */
+  padding: 20px; /* Add padding around the section */
+  justify-content: flex-start;
+  margin : 10px 118px;
+}
+
+.card {
+  background: #fff; /* White background for the card */
+  border-radius: 3px; /* Rounded corners */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 40px;
+}
+
+.card-image {
+  height: 200px; /* Fixed height for the image */
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center; /* Center the image */
+  
+}
+
+.card-content {
+  padding: 15px; /* Add padding inside the card */
+}
+
+.card-content h3 {
+  font-size: 1.3em; /* Larger font size for the title */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.card-content .green{
+  background-color: rgb(107, 177, 2);
+  padding: 3px 7px;
+  color: #fff;
+  border-radius: 2px;
+}
+.card-content .blue{
+  background-color: rgb(89, 110, 175);
+  padding: 3px 7px;
+  color: #fff;
+  border-radius: 2px;
+}
+.card-content .purple{
+  background-color: rgb(147, 90, 159);
+  padding: 3px 7px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.card-content .orange{
+  background-color: rgb(192, 101, 62);
+  padding: 3px 7px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.card-content .yellow{
+  background-color: rgb(215, 187, 48);
+  padding: 3px 7px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.card-content .red{
+  color: #e21010;
+}
+
+.card-content p {
+  font-size: 0.9em; /* Normal font size for the text */
+  color: #555; /* Gray text color */
+  margin-bottom: 10px; /* Space below each paragraph */
+  margin-left: 4px;
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center; /* Vertically center the image and text */
+  gap: 10px; /* Space between the image and text */
+  margin-top: 25px;
+}
+
+.card-image {
+  height: 200px; /* Fixed height for the image */
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center; /* Center the image */
+}
+
+.rounded-image {
+  width: 43px; /* Set a fixed width for the image */
+  height: 45px; /* Set a fixed height for the image */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the area */
+  margin-top: -35px;
+  margin-left: 2px;
+}
+
+
+.open-now-with-icons , .close-now-with-icons {
+  display: flex;
+  align-items: center; /* Vertically center the text and icons */
+  justify-content: space-between; /* Push icons to the right */
+  margin-top: 10px;
+  border-top: 1px solid rgb(201, 199, 199);
+  padding-top: 20px;
+}
+
+
+
+.open-now-with-icons p {
+  margin: 0 5px; /* Remove default margin */
+  font-weight: bold; /* Make "Open Now" bold */
+  color: green; /* Green color for "Open Now" */
+}
+
+.close-now-with-icons p {
+  margin: 0 5px; /* Remove default margin */
+  font-weight: bold; /* Make "Open Now" bold */
+  color: rgb(214, 91, 91); /* Green color for "Open Now" */
+}
+
+.icons {
+  display: flex;
+  align-items: center; /* Vertically center the icons */
+  gap: 18px; /* Space between icons */
+  margin-left: auto; /* Push icons to the right */
+  margin-right: 20px;
+}
+
+.icons i {
+  color: #555; /* Gray icon color */
+  font-size: 1.2em; /* Increase icon size */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+
+/* Client Reviews Section Styles */
+.client-reviews {
+  padding: 40px 20px; /* Add padding around the section */
+  text-align: center; /* Center-align the heading and description */
+}
+
+.client-reviews h2 {
+  font-size: 2em; /* Larger font size for the heading */
+  margin-bottom: 30px; /* Space below the heading */
+  margin-top: 70px;
+}
+
+.client-reviews p {
+  font-size: 1.2em; /* Normal font size for the description */
+  color: #555; /* Gray text color */
+  margin-bottom: 90px; /* Space below the description */
+}
+
+/* Review Cards Layout */
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 18%, 300px), 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between cards */
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Review Card Styles */
+.review-card {
+  background: #fff; /* White background for the card */
+  border-radius: 3px; /* Rounded corners */
+  padding: 40px 20px; /* Add padding inside the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  opacity: 0.5; /* Reduce opacity for all cards */
+  height : 340px;
+  overflow: hidden;
+}
+
+.review-header {
+  display: flex;
+  align-items: center; /* Vertically center the image and client info */
+  gap: 15px; /* Space between image and text */
+  margin-bottom: 15px; /* Space below the header */
+  margin-left: 10px;
+}
+
+.client-image {
+  width: 60px; /* Set a fixed width for the client image */
+  height: 60px; /* Set a fixed height for the client image */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.client-info h4 {
+  font-size: 1.2em; /* Larger font size for the client name */
+  margin-bottom: 5px; /* Space below the client name */
+}
+
+.client-info p {
+  font-size: 1em; /* Normal font size for the location */
+  color: #777; /* Gray text color */
+  margin-bottom: 5px; /* Space below the location */
+  margin-left: -17px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px; /* Space between stars */
+  margin-left: 1px;
+}
+
+.stars i {
+  color: #d0b729; /* Gold color for stars */
+  font-size: 1em; /* Normal font size for stars */
+}
+
+.review-text {
+  font-size: 1em; /* Normal font size for the review text */
+  color: #555; /* Gray text color */
+  line-height: 1.6; /* Improve readability with line height */
+  margin-top: 20px;
+  text-align: left;
+}
+
+.review-card.middle-card {
+  opacity: 1; /* Full opacity for the middle card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Stats Section Styles */
+/* Stats Section Styles */
+.stats-section {
+  position: relative; /* Ensure the background image is positioned correctly */
+  height: 330px; /* Set a fixed height for the section */
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-align the text */
+  overflow: hidden; /* Ensure the background image doesn't overflow */
+  margin: 90px 40px;
+}
+
+.stats-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center; /* Center the image */
+  z-index: -1; /* Place the background behind the content */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay with 50% opacity */
+  z-index: 0; /* Place the overlay between the background and content */
+}
+
+.stats-content {
+  display: flex;
+  gap: 110px; /* Space between stats */
+  z-index: 1; /* Ensure the content is above the overlay */
+}
+
+.stat h2 {
+  font-size: 3em; /* Larger font size for the numbers */
+  margin-bottom: 10px; /* Space below the numbers */
+  color: #e1dfdf; /* White text color */
+}
+
+.stat p {
+  font-size: 1.2em; /* Normal font size for the text */
+  color: #e1e0e0; /* White text color */
+}
+
+/* News and Articles Section Styles */
+.news-articles {
+  padding: 40px 20px; /* Add padding around the section */
+  text-align: center; /* Center-align the heading and description */
+}
+
+.news-articles h2 {
+  font-size: 2em; /* Larger font size for the heading */
+  margin-bottom: 25px; /* Space below the heading */
+}
+
+.news-articles p {
+  font-size: 1.2em; /* Normal font size for the description */
+  color: #555; /* Gray text color */
+  margin-bottom: 60px; /* Space below the description */
+}
+
+/* News Cards Layout */
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between cards */
+  margin: 20px 150px;
+}
+
+/* News Card Styles */
+.news-card {
+  background: #fff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.news-image {
+  height: 220px; /* Fixed height for the image */
+  background-size: cover; /* Ensure the image covers the area */
+  background-position: center; /* Center the image */
+}
+
+.news-content {
+  padding: 20px; /* Add padding inside the card */
+}
+
+.news-content h3 {
+  font-size: 1.1em; /* Larger font size for the title */
+  margin-bottom: 15px; /* Space below the title */
+  text-align: left;
+}
+
+.news-content .date {
+  font-size: 0.8em; /* Smaller font size for the date */
+  color: #777; /* Gray text color */
+  margin-bottom: 13px; /* Space below the date */
+  text-align: left;
+}
+
+.news-content .description {
+  font-size: 0.9em; /* Normal font size for the description */
+  color: #555; /* Gray text color */
+  line-height: 1.6; /* Improve readability with line height */
+  text-align: left;
+}
+
+.news-content .date strong{
+  color : rgb(69, 68, 68);
+}
+
+
+/* Business Listing Section Styles */
+.business-listing {
+  padding: 140px 20px; /* Add padding around the section */
+  background: #efeeee; /* White background */
+  text-align: center; /* Center-align the content */
+  margin: 30px 50px;
+}
+
+.business-listing h2 {
+  font-size: 1.7em; /* Larger font size for the heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.business-listing p {
+  font-size: 1.2em; /* Normal font size for the description */
+  color: #555; /* Gray text color */
+  margin-bottom: 50px; /* Space below the description */
+}
+
+.email-form {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  gap: 0; /* No space between input and button */
+}
+
+.email-form input {
+  padding: 10px; /* Add padding to the input */
+  width: 300px; /* Set a fixed width for the input */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px 0 0 5px; /* Rounded corners on the left only */
+  font-size: 1em; /* Normal font size */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.email-form button {
+  padding: 10px 20px; /* Add padding to the button */
+  background: #e23737; /* Blue background */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 0 3px 3px 0; /* Rounded corners on the right only */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 1em; /* Normal font size */
+}
+
+
+header:last-of-type{
+  margin-bottom: 0px;
+} 
+
+
+/* Footer Styles */
+.footer {
+  padding: 20px; /* Add padding inside the footer */
+  text-align: left;
+  margin-right: 160px;
+  margin-left: 80px;
+  border-top: 1px solid rgb(180, 180, 180);
+  margin-bottom: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Space between copyright and right content */
+  align-items: center; /* Vertically center the content */
+  max-width: 1200px; /* Set a max width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add padding to the sides */
+}
+
+.footer-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 1em; /* Normal font size */
+  color : gray;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center; /* Vertically center the phone number and icons */
+  gap: 20px; /* Space between phone number and icons */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px; /* Space between icons */
+  font-size: 1.2em;
+}
+
+.icon{
+  background-color: #e1e0e0;
+  border-radius: 50%;
+  width : 38px;
+  height: 38px;
+  padding: 9px 10px;
+  color : gray;
+}
+.icon:last-child{
+  background-color: #e1e0e0;
+  color : gray;
+  border-radius: 50%;
+  padding : 9px 9px;
+}
+
+.icon:first-child{
+  background-color: #e1e0e0;
+  border-radius: 50%;
+  padding : 9px 13px;
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Top Bar */
+  .top-bar {
+    padding: 10px;
+  }
+
+  /* Header */
+  header {
+    padding: 10px;
+  }
+  .logo {
+    margin-left: 20px; /* Reduce left margin */
+  }
+  nav ul {
+    margin-right: 20px; /* Reduce right margin */
+  }
+
+  /* Hero Section */
+  .hero {
+    margin: 0 20px; /* Reduce margin */
+  }
+  
+  /* Categories */
+  .categories {
+    padding: 20px;
+    margin-top: -50px; /* Adjust margin */
+  }
+
+  /* How It Works */
+  .steps {
+    gap: 15px; /* Reduce space between steps */
+  }
+
+  /* Cards Section */
+  .cards-section {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    margin: 10px 50px; /* Adjust margin */
+  }
+
+  /* Client Reviews */
+  .review-cards {
+    grid-template-columns: repeat(2, 1fr); /* Three columns layout */
+  }
+
+  /* Stats Section */
+  .stats-section {
+    margin: 50px 20px; /* Adjust margin */
+  }
+
+  /* News and Articles */
+  .news-cards {
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    margin: 20px 50px; /* Adjust margin */
+  }
+
+  /* Business Listing */
+  .business-listing {
+    margin: 50px 20px; /* Adjust margin */
+  }
+
+  /* Footer */
+  .footer {
+    margin: 20px 50px; /* Adjust margin */
+  }
+}
+
+
+
+
+@media (min-width: 168px) and (max-width: 1123px) {
+  .search-container {
+    width: 190px; /* Slightly smaller width for tablet */
+    margin: 0 90px; /* Center the container */
+    display: flex;
+    justify-content: left;
+  }
+  .search-input{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .search-container button{
+    display: flex;
+  }
+}
+
+
+/* @media (max-width: 1190px){
+  .review-cards {
+    grid-template-columns: repeat(2, 1fr); /* Three columns layout */
+  
