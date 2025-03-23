@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListRace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="top-bar">
+        <!-- Left Side: Dropdowns and Search Icon -->
+        <div class="left-section">
+            <div class="dropdown">
+                <select>
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                    <option value="es">ES</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <select>
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                </select>
+            </div>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i> <!-- Font Awesome search icon -->
+            </div>
+        </div>
+    
+        <!-- Right Side: Phone Number, Sign In, Register -->
+        <div class="right-section">
+            <span>+122 277 6868</span>
+            <a href="#">Sign In</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <span class="list">List</span><span class="race">Race</span> <!-- Logo with two colors -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOW IT WORKS</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>BEST PLACE TO FIND AND EXPLORE</h1>
+        <h1>THAT ALL YOU NEED</h1>
+        <p>Find Best Place, Restaurant, Hotel, Real State and many more think in just One click</p>
+        <div class="search-container">
+            <div class="search-input">
+                <label for="search-what">What?</label>
+                <input type="text" id="search-what" placeholder="Ex: Police, Restaurant, Food, Automobile">
+                <i class="fa-solid fa-list-ul"></i>
+            </div>
+            <div class="search-input">
+                <label for="search-location">Location</label>
+                <input type="text" id="search-location" placeholder="Ex: London, Newyork, Rome">
+                <i class="fa-solid fa-crosshairs"></i>
+            </div>
+            <button>Search</button>
+        </div>
+    </div>
+    
+
+    <section class="categories">
+        <div class="category">
+            <i class="fa-solid fa-utensils"></i> <!-- Restaurant Icon -->
+            <h4>Resturent</h4>
+            <p>150 listings</p>
+        </div>
+        <div class="category">
+            <i class="fa-solid fa-plane-departure"></i> <!-- Destination Icon -->
+            <h4>Destination</h4>
+            <p>214 listings</p>
+        </div>
+        <div class="category">
+            <i class="fa-solid fa-hotel"></i> <!-- Hotels Icon -->
+            <h4>Hotels</h4>
+            <p>185 listings</p>
+        </div>
+        <div class="category">
+            <i class="fa-solid fa-hand-holding-medical"></i> <!-- Healthcare Icon -->
+            <h4>Healthcare</h4>
+            <p>200 listings</p>
+        </div>
+        <div class="category">
+            <i class="fa-solid fa-car-side"></i> <!-- Automation Icon -->
+            <h4>Automation</h4>
+            <p>120 listings</p>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2>HOW IT WORKS</h2>
+        <p>Learn More about how our website works</p>
+        <div class="steps">
+            <div class="step">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Choose what to Do</h3>
+                <p>Lorem Ipsum dolor sit amet, consecte </p>
+                <p>adipisicing elit, sed do eiusmod tempor </p>
+                <p> incididunt ut laboremagna aliqua.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <h3>Find what you want</h3>
+                <p>Lorem Ipsum dolor sit amet, consecte </p>
+                <p>adipisicing elit, sed do eiusmod tempor </p>
+                <p> incididunt ut laboremagna aliqua.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="step">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Explore amazing Place</h3>
+                <p>Lorem Ipsum dolor sit amet, consecte </p>
+                <p>adipisicing elit, sed do eiusmod tempor </p>
+                <p> incididunt ut laboremagna aliqua.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <h2>EXPLORE</h2>
+        <p>Explore New place, food, culture around the world and many more</p>
+    </section>
+
+    <section class="cards-section">
+        <div class="card">
+            <div class="card-image" style="background-image: url('./qui-nguyen-Zrp9b3PMIy8-unsplash.jpg');"></div>
+            <div class="card-content">
+                <h3>Tommy Hellinger Bar</h3>
+                <p><span class="blue">5.0</span>&nbsp;10 Ratings &nbsp;|&nbsp; Form <span class="red">5$-300$</span> &nbsp;|&nbsp; Restaurant</p>
+                <div class="text-with-image">
+                    <img src="./albert-dera-ILip77SbmOE-unsplash.jpg" alt="Profile Picture" class="rounded-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="close-now-with-icons">
+                    <p>Close Now</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-location-dot"></i> <!-- Location Icon -->
+                        <i class="fa-solid fa-download"></i> <!-- Download Icon -->
+                        <i class="fa-regular fa-heart"></i> <!-- Heart Icon -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('./sasha-kaunas-TAgGZWz6Qg8-unsplash.jpg');"></div>
+            <div class="card-content">
+                <h3>Swim And Dine Resort</h3>
+                <p><span class="green">4.5</span>&nbsp; 8 Ratings &nbsp;|&nbsp; Form <span class="red">50$-500$</span> &nbsp;|&nbsp; Hotel</p>
+                <div class="text-with-image">
+                    <img src="./albert-dera-ILip77SbmOE-unsplash.jpg" alt="Profile Picture" class="rounded-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="open-now-with-icons">
+                    <p>Open Now</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-location-dot"></i> <!-- Location Icon -->
+                        <i class="fa-solid fa-download"></i> <!-- Download Icon -->
+                        <i class="fa-regular fa-heart"></i> <!-- Heart Icon -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('./eric-stein-beldring-fpReukH1Y5s-unsplash.jpg');"></div>
+            <div class="card-content">
+                <h3>Vintage Car Expo</h3>
+                <p><span class="green">4.2</span>&nbsp; 8 Ratings &nbsp;|&nbsp; Form <span class="red">500$-1200$</span> &nbsp;|&nbsp; Automotion</p>
+                <div class="text-with-image">
+                    <img src="./albert-dera-ILip77SbmOE-unsplash.jpg" alt="Profile Picture" class="rounded-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="open-now-with-icons">
+                    <p>Open Now</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-location-dot"></i> <!-- Location Icon -->
+                        <i class="fa-solid fa-download"></i> <!-- Download Icon -->
+                        <i class="fa-regular fa-heart"></i> <!-- Heart Icon -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('./ed-wingate-crO8TEF7qHU-unsplash.jpg');"></div>
+            <div class="card-content">
+                <h3>Europa Tour</h3>
+                <p><span class="yellow">5.0</span> &nbsp;15 Ratings &nbsp;|&nbsp; Form <span class="red">5k$-10K$</span> &nbsp;|&nbsp; Destination</p>
+                <div class="text-with-image">
+                    <img src="./albert-dera-ILip77SbmOE-unsplash.jpg" alt="Profile Picture" class="rounded-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="close-now-with-icons">
+                    <p>Close Now</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-location-dot"></i> <!-- Location Icon -->
+                        <i class="fa-solid fa-download"></i> <!-- Download Icon -->
+                        <i class="fa-regular fa-heart"></i> <!-- Heart Icon -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('./the-anam-jetnF4Xv4h8-unsplash.jpg');"></div>
+            <div class="card-content">
+                <h3>Banglow With Swimming Pool</h3>
+                <p><span class="purple">5.0</span>&nbsp; 10 Ratings &nbsp;|&nbsp; Form <span class="red">10k$-15k$</span> &nbsp;|&nbsp; Real Estate</p>
+                <div class="text-with-image">
+                    <img src="./albert-dera-ILip77SbmOE-unsplash.jpg" alt="Profile Picture" class="rounded-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="close-now-with-icons">
+                    <p>Close Now</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-location-dot"></i> <!-- Location Icon -->
+                        <i class="fa-solid fa-download"></i> <!-- Download Icon -->
+                        <i class="fa-regular fa-heart"></i> <!-- Heart Icon -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-image" style="background-image: url('./darren-lawrence-hy_LY9Zyfxo-unsplash.jpg');"></div>
+            <div class="card-content">
+                <h3>Thailand Tour</h3>
+                <p><span class="orange">5.0</span>&nbsp; 16 Ratings &nbsp;|&nbsp; Form <span class="red">5k$-10k$</span>&nbsp; |&nbsp; Destination</p>
+                <div class="text-with-image">
+                    <img src="./albert-dera-ILip77SbmOE-unsplash.jpg" alt="Profile Picture" class="rounded-image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="close-now-with-icons">
+                    <p>Close Now</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-location-dot"></i> <!-- Location Icon -->
+                        <i class="fa-solid fa-download"></i> <!-- Download Icon -->
+                        <i class="fa-regular fa-heart"></i> <!-- Heart Icon -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-reviews">
+        <h2>CLIENT REVIEWS</h2>
+        <p>What our clients say about us</p>
+    
+        <div class="review-cards">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="./craig-mckay-jmURdhtm7Ng-unsplash.jpg" alt="Client 1" class="client-image">
+                    <div class="client-info">
+                        <h4>Monirul Islam</h4>
+                        <p>London, UK</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    Boegheur aint occoecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
+                </p>
+            </div>
+    
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="./jurica-koletic-7YVZYZeITc8-unsplash.jpg" alt="Client 2" class="client-image">
+                    <div class="client-info">
+                        <h4>Shohrab Hos</h4>
+                        <p>London, UK</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    Boegheur aint occoecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
+                </p>
+            </div>
+    
+            <!-- Review 3 -->
+            <div class="review-card middle-card">
+                <div class="review-header">
+                    <img src="./joseph-gonzalez-iFgRcqHznqg-unsplash.jpg" alt="Client 3" class="client-image">
+                    <div class="client-info">
+                        <h4>Tom Leakar</h4>
+                        <p>London, UK</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    Boegheur aint occoecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
+                </p>
+            </div>
+    
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="./albert-dera-ILip77SbmOE-unsplash.jpg" alt="Client 4" class="client-image">
+                    <div class="client-info">
+                        <h4>Tom Leakar</h4>
+                        <p>London, UK</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    Boegheur aint occoecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
+                </p>
+            </div>
+    
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <img src="./nrd-ZmmAnliy1d4-unsplash.jpg" alt="Client 5" class="client-image">
+                    <div class="client-info">
+                        <h4>Monirul Islam</h4>
+                        <p>London, UK</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    Boegheur aint occoecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-background" style="background-image: url('./tim-stief-YFFGkE3y4F8-unsplash.jpg');"></div>
+        <div class="overlay"></div> <!-- Dark overlay for better text visibility -->
+        <div class="stats-content">
+            <div class="stat">
+                <h2>4K+</h2>
+                <p>Listings</p>
+            </div>
+            <div class="stat">
+                <h2>2K+</h2>
+                <p>Listing Categories</p>
+            </div>
+            <div class="stat">
+                <h2>3K+</h2>
+                <p>Visitors</p>
+            </div>
+            <div class="stat">
+                <h2>2K+</h2>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-articles">
+        <h2>NEWS AND ARTICLES</h2>
+        <p>Always up to date with our latest News and Articles</p>
+    
+        <div class="news-cards">
+            <!-- Card 1 -->
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('./oliver-sjostrom-CihXnvELE00-unsplash.jpg');"></div>
+                <div class="news-content">
+                    <h3>How to find your Desired Place more quickly</h3>
+                    <p class="date">Posted By <strong>ADMIN</strong> &nbsp|&nbsp March 2018</p>
+                    <p class="description">
+                        Lorem Ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('./mesut-kaya-eOcyhe5-9sQ-unsplash.jpg');"></div>
+                <div class="news-content">
+                    <h3>How to find your Desired Place more quickly</h3>
+                    <p class="date">Posted By <strong>ADMIN</strong> &nbsp|&nbsp March 2018</p>
+                    <p class="description">
+                        Lorem Ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Card 3 -->
+            <div class="news-card">
+                <div class="news-image" style="background-image: url('./drif-riadh-YpkuRn54y4w-unsplash.jpg');"></div>
+                <div class="news-content">
+                    <h3>How to find your Desired Place more quickly</h3>
+                    <p class="date">Posted By <strong>ADMIN</strong> &nbsp|&nbsp March 2018</p>
+                    <p class="description">
+                        Lorem Ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business-listing">
+        <h2>DO YOU WANT TO ADD YOUR BUSINESS LISTING WITH US?</h2>
+        <p>Listrace offer you to list your business with us and we are very much able to promote your Business.</p>
+        
+        <div class="email-form">
+            <input type="email" placeholder="Enter your email here">
+            <button>Create Account</button>
+        </div>
+    </section>
+
+    <header>
+        <div class="logo">
+            <span class="list">List</span><span class="race">Race</span> <!-- Logo with two colors -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOW IT WORKS</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>©Copyright. Designed And Developed By Themesine</p>
+            <div class="footer-right">
+                <p><i class="fa-solid fa-phone"></i> +1 (222) 777 8888</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f icon"></i>
+                    <i class="fa-brands fa-twitter icon"></i>
+                    <i class="fa-brands fa-linkedin-in icon"></i>
+                    <i class="fa-brands fa-google-plus-g icon"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
